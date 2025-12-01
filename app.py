@@ -74,7 +74,7 @@ app.layout = dbc.Container([
                 min=Ganancia_min,
                 max=Ganancia_max,
                 value=[Ganancia_min, Ganancia_max],
-                step=(Ganancia_max - Ganancia_min) / 1000
+                step=(Ganancia_max - Ganancia_min) / 10
             )
         ], width=8),
         dbc.Col([
@@ -171,4 +171,5 @@ def crear_graficas(valor_industria, valor_empresa, valor_sede, valor_rango_ganan
         })
 
     return grafica_barras, grafica_torta, grafica_area
+
 
