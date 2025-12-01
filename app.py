@@ -33,7 +33,7 @@ external_stylesheets = [dbc.themes.PULSE]
 app = Dash(__name__, external_stylesheets=external_stylesheets)
 app.title = "Detalle de resultados empresas americanas"
 
-aapp.layout = dbc.Container([
+app.layout = dbc.Container([
     dbc.Row([html.H1("Reporte de ganancias industrias Americanas", className="text-center my-4")]),
 
     dbc.Row([
@@ -171,3 +171,4 @@ def crear_graficas(valor_industria, valor_empresa, valor_sede, valor_rango_ganan
         })
 
     return grafica_barras, grafica_torta, grafica_area
+
